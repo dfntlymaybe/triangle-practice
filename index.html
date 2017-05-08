@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Triangle Ptractice</title>
+  <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+  
+  <div class="header">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+              Triangle Practice
+            </a>
+          </div>
+        </div>
+    </nav>
+  </div>
+
+  <div class="container first-view">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h2>Please fill in triangle coordinates</h2>
+        <form>
+          <div class="form-group">
+            <h3>Point A</h3>
+            <label>X:</label>
+            <input type="text" id="ax"/>
+            <label>Y:</label>
+            <input type="text" id="ay"/>
+          </div>
+          <div class="form-group">
+            <h3>Point B</h3>
+            <label>X:</label>
+            <input type="text" id="bx"/>
+            <label>Y:</label>
+            <input type="text" id="by"/>
+          </div>
+          <div class="form-group">
+            <h3>Point C</h3>
+            <label>X:</label>
+            <input type="text" id="cx"/>
+            <label>Y:</label>
+            <input type="text" id="cy"/>
+          </div>
+          <button type="submit" class="btn btn-primary submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container second-view">
+    <div class="row">
+      <button class="back">Back</button>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <canvas id="myCanvas" width=500 height=300>
+          <p>Your browser doesn't  
+         support Canvas API.</p>
+        </canvas>
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
